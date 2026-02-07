@@ -192,6 +192,14 @@ body {
   padding-left: calc(50% + 40px);
 }
 
+/* Full width for content with sub-positions */
+.timeline-item:nth-child(odd) .timeline-content:has(.sub-positions),
+.timeline-item:nth-child(even) .timeline-content:has(.sub-positions) {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
 .timeline-node {
   position: absolute;
   left: 50%;
