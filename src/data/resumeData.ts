@@ -118,17 +118,6 @@ export const resumeData: ResumeData = {
       ],
     },
     {
-      company: 'Berkshire Partners',
-      position: 'Associate, Value Creation Group',
-      duration: 'Jun 2016 - May 2017',
-      location: 'Boston, MA',
-      color: '#1B4D3E',
-      description: [
-        'Worked with portfolio companies on value creation initiatives in upper middle-market PE firm (>$6B AUM)',
-        'Led operational improvement projects across portfolio companies',
-      ],
-    },
-    {
       company: 'Columbia Business School',
       position: 'MBA Student - Graduate Education',
       duration: 'Aug 2017 - May 2019',
@@ -139,6 +128,17 @@ export const resumeData: ResumeData = {
         'VP of Events on Student Executive Board, Peer Advisor',
         'Recipient of Student Service Award',
         'Focused on corporate strategy, product management, and entrepreneurship',
+      ],
+    },
+    {
+      company: 'Berkshire Partners',
+      position: 'Associate, Value Creation Group',
+      duration: 'Jun 2016 - May 2017',
+      location: 'Boston, MA',
+      color: '#1B4D3E',
+      description: [
+        'Worked with portfolio companies on value creation initiatives in upper middle-market PE firm (>$6B AUM)',
+        'Led operational improvement projects across portfolio companies',
       ],
     },
     {
