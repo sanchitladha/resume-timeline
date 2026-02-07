@@ -127,6 +127,21 @@ export const resumeData: ResumeData = {
             'Delivered 10 p.p shift in vaccine sentiment through targeted influencer campaign based on audience clusters',
           ],
         },
+        {
+          heading: 'Loyalty program design and implementation – Top quick service restaurant',
+          items: [
+            'Analyzed 1B+ customer transaction data to understand customer behavior and conducted a conjoint study to inform program elements for target segments; crafted 50+ test & learn experiments to personalize',
+            'Developed a business case for loyalty program (earn and burn) expected to add 3% in top line sales annually over 5 years',
+            'Designed loyalty org model and outlined technology roadmap to launch and implement rewards program',
+          ],
+        },
+        {
+          heading: 'Growth strategy in preparation of exit event – Fashion retailer',
+          items: [
+            'Directly advised a founder-owned and run business on articulating the next chapter of their growth story in preparation for an exit event; identified +25% quick-win revenue opportunities from store expansion',
+            'Led team of 3 to launch consumer research to understand TAM, target consumers, brand perception and competitive landscape to "change the way we think about our business" (in founder\'s words)',
+          ],
+        },
       ],
     },
     {

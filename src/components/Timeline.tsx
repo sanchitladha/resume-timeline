@@ -256,14 +256,14 @@ export const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
 
                   {/* Grouped Description */}
                   {exp.groupedDescription && (
-                    <div className="grouped-description">
+                    <div className={`grouped-description ${exp.groupedDescription[0]?.items.length === 0 ? 'has-master-heading' : ''}`}>
                       {exp.groupedDescription.map((group, groupIndex) => (
                         <motion.div
                           key={groupIndex}
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: groupIndex * 0.15 }}
-                          className="description-group"
+                          className={`description-group ${group.items.length === 0 ? 'master-heading-group' : 'project-group'}`}
                         >
                           {group.heading && (
                             <h5 className={group.items.length === 0 ? "master-heading" : "group-heading"}>
