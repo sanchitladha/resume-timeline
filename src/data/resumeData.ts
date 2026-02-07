@@ -149,7 +149,7 @@ export const resumeData: ResumeData = {
       position: 'MBA Student - Graduate Education',
       duration: 'Aug 2017 - May 2019',
       location: 'New York, NY',
-      color: '#B9D9EB',
+      color: '#75AADB',
       description: [
         'Pursued MBA in Strategy and Management',
         'VP of Events on Student Executive Board, Peer Advisor',
