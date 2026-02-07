@@ -336,11 +336,13 @@ body {
 }
 
 .sub-positions {
-  margin: 0 -0.5rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: 0;
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  width: calc(100% + 1rem);
+  gap: 1.5rem;
 }
 
 .sub-position {
@@ -349,8 +351,6 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   transition: all 0.3s ease;
-  min-width: 0;
-  width: 100%;
 }
 
 .sub-position:hover {
