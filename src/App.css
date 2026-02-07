@@ -337,15 +337,23 @@ body {
 
 .sub-positions {
   margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .sub-position {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.sub-position:last-child {
-  border-bottom: none;
+.sub-position:hover {
+  background: var(--bg-white);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-medium);
 }
 
 .sub-position-header {
@@ -617,6 +625,11 @@ body {
     text-align: left;
     padding-right: 0;
     padding-left: 70px;
+  }
+
+  .sub-positions {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
