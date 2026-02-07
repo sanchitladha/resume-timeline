@@ -10,6 +10,14 @@ export interface FeaturedContent {
   linkText?: string;
 }
 
+export interface SubPosition {
+  position: string;
+  duration: string;
+  description?: string[];
+  groupedDescription?: DescriptionGroup[];
+  featuredContent?: FeaturedContent;
+}
+
 export interface WorkExperienceItem {
   company: string;
   position: string;
@@ -18,6 +26,7 @@ export interface WorkExperienceItem {
   description?: string[];
   groupedDescription?: DescriptionGroup[];
   featuredContent?: FeaturedContent;
+  subPositions?: SubPosition[];
   color: string;
 }
 
@@ -59,34 +68,37 @@ export const resumeData: ResumeData = {
   workExperience: [
     {
       company: 'Adobe Inc.',
-      position: 'Principal, Adobe Incubator Product Strategy & Ops',
-      duration: 'Mar 2024 - Present',
+      position: 'Multiple Roles',
+      duration: 'Sep 2022 - Present',
       location: 'San Francisco, CA',
       color: '#FF0000',
-      description: [
-        'Built Adobe\'s first 0-to-1 product Incubator (modeled after YC & Google\'s Area120), defining how early-stage AI product ideas are evaluated, prioritized, resourced, and translated into executable roadmaps',
-        'Defined product adjacencies and whitespaces for Incubator to invest informed by GenAI developments, evolving user workflows, and competitive dynamics; designed and ran an annual venture Pitch Day growing submissions 265% YoY (46 to 168)',
-        'Led product strategy for 7 AI-first product ventures; 3 products successfully graduated into the BU (<a href="https://firefly.adobe.com/boards" target="_blank" rel="noopener noreferrer">Firefly Boards</a>, <a href="https://business.adobe.com/products/brand-concierge.html" target="_blank" rel="noopener noreferrer">Brand Concierge</a>, <a href="https://podcast.adobe.com/en" target="_blank" rel="noopener noreferrer">Adobe Podcast</a>) based on early PMF signals',
-        'Manage $30M operating budget across Incubator portfolio, allocating headcount and other spend based on milestone-based gating criteria',
-        'Authored 150+ editions of "This Week in GenAI" newsletter tracking developments and implications for Adobe - circulated to Executive Leadership',
-      ],
-      featuredContent: {
-        image: '/incubator-pitch-day.png',
-        imageAlt: 'Adobe Incubator Pitch Day 2025 - Team photo',
-        link: 'https://blog.adobe.com/en/publish/2025/11/17/adobes-new-incubator-creates-future?sdid=V6NZKF7Z&mv=social&mv2=owned-organic&linkId=100000392585252',
-        linkText: 'Blog post covering Incubator\'s Pitch Day in 2025',
-      },
-    },
-    {
-      company: 'Adobe Inc.',
-      position: 'Sr. Manager Corporate Strategy',
-      duration: 'Sep 2022 - Mar 2024',
-      location: 'San Francisco, CA',
-      color: '#FF0000',
-      description: [
-        'Led Experience Cloud\'s 3-year product strategy, identifying adjacencies unlocked by GenAI; one initiative progressed from strategy to internal incubation and toward productization (<a href="https://business.adobe.com/products/genstudio-for-performance-marketing.html" target="_blank" rel="noopener noreferrer">GenStudio</a>)',
-        'Drove Adobe\'s "3D for 2D" AI strategy, building the investment case for licensing high-quality 3D datasets to improve generative video and image models; resulted in product releases like <a href="https://www.youtube.com/watch?v=gfct0aH2COw" target="_blank" rel="noopener noreferrer">Project Turntable</a>',
-        'Crafted Adobe\'s AI narrative for Investor Day 2023, framing the shift in time spent by creatives from precision editing to ideation and democratization of creation',
+      subPositions: [
+        {
+          position: 'Principal, Adobe Incubator Product Strategy & Ops',
+          duration: 'Mar 2024 - Present',
+          description: [
+            'Built Adobe\'s first 0-to-1 product Incubator (modeled after YC & Google\'s Area120), defining how early-stage AI product ideas are evaluated, prioritized, resourced, and translated into executable roadmaps',
+            'Defined product adjacencies and whitespaces for Incubator to invest informed by GenAI developments, evolving user workflows, and competitive dynamics; designed and ran an annual venture Pitch Day growing submissions 265% YoY (46 to 168)',
+            'Led product strategy for 7 AI-first product ventures; 3 products successfully graduated into the BU (<a href="https://firefly.adobe.com/boards" target="_blank" rel="noopener noreferrer">Firefly Boards</a>, <a href="https://business.adobe.com/products/brand-concierge.html" target="_blank" rel="noopener noreferrer">Brand Concierge</a>, <a href="https://podcast.adobe.com/en" target="_blank" rel="noopener noreferrer">Adobe Podcast</a>) based on early PMF signals',
+            'Manage $30M operating budget across Incubator portfolio, allocating headcount and other spend based on milestone-based gating criteria',
+            'Authored 150+ editions of "This Week in GenAI" newsletter tracking developments and implications for Adobe - circulated to Executive Leadership',
+          ],
+          featuredContent: {
+            image: '/incubator-pitch-day.png',
+            imageAlt: 'Adobe Incubator Pitch Day 2025 - Team photo',
+            link: 'https://blog.adobe.com/en/publish/2025/11/17/adobes-new-incubator-creates-future?sdid=V6NZKF7Z&mv=social&mv2=owned-organic&linkId=100000392585252',
+            linkText: 'Blog post covering Incubator\'s Pitch Day in 2025',
+          },
+        },
+        {
+          position: 'Sr. Manager Corporate Strategy',
+          duration: 'Sep 2022 - Mar 2024',
+          description: [
+            'Led Experience Cloud\'s 3-year product strategy, identifying adjacencies unlocked by GenAI; one initiative progressed from strategy to internal incubation and toward productization (<a href="https://business.adobe.com/products/genstudio-for-performance-marketing.html" target="_blank" rel="noopener noreferrer">GenStudio</a>)',
+            'Drove Adobe\'s "3D for 2D" AI strategy, building the investment case for licensing high-quality 3D datasets to improve generative video and image models; resulted in product releases like <a href="https://www.youtube.com/watch?v=gfct0aH2COw" target="_blank" rel="noopener noreferrer">Project Turntable</a>',
+            'Crafted Adobe\'s AI narrative for Investor Day 2023, framing the shift in time spent by creatives from precision editing to ideation and democratization of creation',
+          ],
+        },
       ],
     },
     {

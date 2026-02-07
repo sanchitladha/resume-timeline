@@ -129,6 +129,111 @@ export const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                     </motion.div>
                   )}
 
+                  {/* Sub-Positions (Multiple Roles) */}
+                  {exp.subPositions && (
+                    <div className="sub-positions">
+                      {exp.subPositions.map((subPos, subIndex) => (
+                        <motion.div
+                          key={subIndex}
+                          className="sub-position"
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.2 + (subIndex * 0.15) }}
+                        >
+                          <div className="sub-position-header">
+                            <h5 className="sub-position-title">{subPos.position}</h5>
+                            <span className="sub-position-duration">{subPos.duration}</span>
+                          </div>
+
+                          {/* Featured Content for Sub-Position */}
+                          {subPos.featuredContent && (
+                            <motion.div
+                              className="featured-content"
+                              initial={{ opacity: 0, y: -10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: 0.3 + (subIndex * 0.15) }}
+                            >
+                              {subPos.featuredContent.image && (
+                                <img
+                                  src={subPos.featuredContent.image}
+                                  alt={subPos.featuredContent.imageAlt || 'Featured content'}
+                                  className="featured-image"
+                                />
+                              )}
+                              {subPos.featuredContent.link && subPos.featuredContent.linkText && (
+                                <a
+                                  href={subPos.featuredContent.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="featured-link"
+                                >
+                                  {subPos.featuredContent.linkText} →
+                                </a>
+                              )}
+                            </motion.div>
+                          )}
+
+                          {/* Description for Sub-Position */}
+                          {subPos.description && (
+                            <ul className="description-list">
+                              {subPos.description.map((desc, descIndex) => (
+                                <motion.li
+                                  key={descIndex}
+                                  initial={{ opacity: 0, x: -20 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: 0.3 + (subIndex * 0.15) + (descIndex * 0.1) }}
+                                  className="description-item"
+                                >
+                                  <span className="icon-wrapper">
+                                    {getIconForDescription(desc)}
+                                  </span>
+                                  <span dangerouslySetInnerHTML={{ __html: desc }} />
+                                </motion.li>
+                              ))}
+                            </ul>
+                          )}
+
+                          {/* Grouped Description for Sub-Position */}
+                          {subPos.groupedDescription && (
+                            <div className="grouped-description">
+                              {subPos.groupedDescription.map((group, groupIndex) => (
+                                <motion.div
+                                  key={groupIndex}
+                                  initial={{ opacity: 0, x: -20 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: 0.3 + (subIndex * 0.15) + (groupIndex * 0.15) }}
+                                  className="description-group"
+                                >
+                                  {group.heading && group.items.length > 0 && (
+                                    <h5 className="group-heading">{group.heading}</h5>
+                                  )}
+                                  {group.items.length > 0 && (
+                                    <ul className="description-list">
+                                      {group.items.map((item, itemIndex) => (
+                                        <motion.li
+                                          key={itemIndex}
+                                          initial={{ opacity: 0, x: -20 }}
+                                          animate={{ opacity: 1, x: 0 }}
+                                          transition={{ delay: 0.3 + (subIndex * 0.15) + (groupIndex * 0.15) + (itemIndex * 0.1) }}
+                                          className="description-item"
+                                        >
+                                          <span className="icon-wrapper">
+                                            {getIconForDescription(item)}
+                                          </span>
+                                          <span dangerouslySetInnerHTML={{ __html: item }} />
+                                        </motion.li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                </motion.div>
+                              ))}
+                            </div>
+                          )}
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+
                   {/* Regular Description */}
                   {exp.description && (
                     <ul className="description-list">

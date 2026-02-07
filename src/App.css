@@ -335,6 +335,46 @@ body {
   color: white;
 }
 
+.sub-positions {
+  margin-top: 0;
+}
+
+.sub-position {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sub-position:last-child {
+  border-bottom: none;
+}
+
+.sub-position-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sub-position-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.sub-position-duration {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+  background: var(--bg-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+}
+
 .description-list {
   list-style: none;
   padding: 0;
