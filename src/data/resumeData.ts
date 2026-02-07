@@ -129,6 +129,19 @@ export const resumeData: ResumeData = {
       ],
     },
     {
+      company: 'Columbia Business School',
+      position: 'MBA Student - Graduate Education',
+      duration: 'Aug 2017 - May 2019',
+      location: 'New York, NY',
+      color: '#B9D9EB',
+      description: [
+        'Pursued MBA in Strategy and Management',
+        'VP of Events on Student Executive Board, Peer Advisor',
+        'Recipient of Student Service Award',
+        'Focused on corporate strategy, product management, and entrepreneurship',
+      ],
+    },
+    {
       company: 'Monitor Deloitte',
       position: 'Consultant / Analyst',
       duration: 'Jul 2012 - May 2016',
