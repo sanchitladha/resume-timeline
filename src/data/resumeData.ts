@@ -68,14 +68,14 @@ export const resumeData: ResumeData = {
   workExperience: [
     {
       company: 'Adobe Inc.',
-      position: 'Multiple Roles',
+      position: 'Product Strategy & Operations',
       duration: 'Sep 2022 - Present',
       location: 'San Francisco, CA',
       color: '#FF0000',
       subPositions: [
         {
-          position: 'Principal, Adobe Incubator Product Strategy & Ops',
-          duration: 'Mar 2024 - Present',
+          position: 'Adobe Incubator - Product Strategy & Ops',
+          duration: 'March 2024 to Present',
           description: [
             'Built Adobe\'s first 0-to-1 product Incubator (modeled after YC & Google\'s Area120), defining how early-stage AI product ideas are evaluated, prioritized, resourced, and translated into executable roadmaps',
             'Defined product adjacencies and whitespaces for Incubator to invest informed by GenAI developments, evolving user workflows, and competitive dynamics; designed and ran an annual venture Pitch Day growing submissions 265% YoY (46 to 168)',
@@ -91,8 +91,8 @@ export const resumeData: ResumeData = {
           },
         },
         {
-          position: 'Sr. Manager Corporate Strategy',
-          duration: 'Sep 2022 - Mar 2024',
+          position: 'Sr. Manager, Corporate Strategy',
+          duration: 'September 2022 to March 2024',
           description: [
             'Led Experience Cloud\'s 3-year product strategy, identifying adjacencies unlocked by GenAI; one initiative progressed from strategy to internal incubation and toward productization (<a href="https://business.adobe.com/products/genstudio-for-performance-marketing.html" target="_blank" rel="noopener noreferrer">GenStudio</a>)',
             'Drove Adobe\'s "3D for 2D" AI strategy, building the investment case for licensing high-quality 3D datasets to improve generative video and image models; resulted in product releases like <a href="https://www.youtube.com/watch?v=gfct0aH2COw" target="_blank" rel="noopener noreferrer">Project Turntable</a>',
