@@ -450,6 +450,18 @@ body {
   letter-spacing: -0.01em;
 }
 
+.master-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--primary-color);
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
 .description-item a {
   color: var(--primary-color);
   text-decoration: none;

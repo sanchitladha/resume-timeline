@@ -265,8 +265,10 @@ export const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                           transition={{ delay: groupIndex * 0.15 }}
                           className="description-group"
                         >
-                          {group.heading && group.items.length > 0 && (
-                            <h5 className="group-heading">{group.heading}</h5>
+                          {group.heading && (
+                            <h5 className={group.items.length === 0 ? "master-heading" : "group-heading"}>
+                              {group.heading}
+                            </h5>
                           )}
                           {group.items.length > 0 && (
                             <ul className="description-list">
